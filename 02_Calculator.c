@@ -6,12 +6,12 @@ double Div(){
 }
 
 double Mul(){
-  double result;
+  double result=num1*num2;
   return result;
 }
 
 double Sub(){
-  double result;
+  double result= num1 - num2;
   return result;
 }
 
@@ -23,8 +23,8 @@ double Add(double num1, double num2){
 int main(int argc, char const *argv[]) {
 
   int answere = 0;
-  double num1;
-  double num2;
+  double num1=0;
+  double num2=0;
   double result;
 
   do {
@@ -42,15 +42,15 @@ int main(int argc, char const *argv[]) {
     }
 
     if (answere = 2) {
-      result = Add(num1,num2);
+      result = Sub(num1,num2);
     }
 
-    if (answere = 1) {
-      result = Add(num1,num2);
+    if (answere = 3) {
+      result = Mul(num1,num2);
     }
 
-    if (answere = 1) {
-      result = Add(num1,num2);
+    if (answere = 4) {
+      result = Div(num1,num2);
     }
 
 
