@@ -1,25 +1,5 @@
 #include <stdio.h>
 
-double Div(){
-  double result;
-  return result;
-}
-
-double Mul(){
-  double result=num1*num2;
-  return result;
-}
-
-double Sub(){
-  double result= num1 - num2;
-  return result;
-}
-
-double Add(double num1, double num2){
-  double result= num1+num2;
-  return result;
-}
-
 int main(int argc, char const *argv[]) {
 
   int answere = 0;
@@ -31,28 +11,42 @@ int main(int argc, char const *argv[]) {
     printf("Add(1), Subtract(2), Multiply(3), Divide(4), StopProgram(-1)\n");
     scanf("%d" ,&answere );
 
-    printf("First number\n" );
-    scanf("%lf",&num1 );
 
-    printf("Second number\n" );
-    scanf("%lf",&num2 );
-
-    if (answere = 1) {
-      result = Add(num1,num2);
+    if (answere == 1){
+      printf("First number\n" );
+      scanf("%lf",&num1 );
+      printf("Second number\n" );
+      scanf("%lf",&num2 );
+      result=  num1+num2;
+      printf("%lf\n",result );
     }
 
-    if (answere = 2) {
-      result = Sub(num1,num2);
+    else if (answere == 2) {
+      printf("Number\n" );
+      scanf("%lf",&num1 );
+      printf("Subtract\n" );
+      scanf("%lf",&num2 );
+      result= num1 - num2;
+      printf("%lf\n",result );
     }
 
-    if (answere = 3) {
-      result = Mul(num1,num2);
+    else if (answere == 3) {
+      printf("Number\n" );
+      scanf("%lf",&num1 );
+      printf("Multiplier\n" );
+      scanf("%lf",&num2 );
+      result=num1*num2;
+      printf("%lf\n",result );
     }
 
-    if (answere = 4) {
-      result = Div(num1,num2);
+    else if (answere == 4) {
+      printf("Number\n" );
+      scanf("%lf",&num1 );
+      printf("Divider\n" );
+      scanf("%lf",&num1 );
+      result = num1 / num2;
+      printf("%lf\n",result );
     }
-
 
   } while(answere != -1);
   return 0;
