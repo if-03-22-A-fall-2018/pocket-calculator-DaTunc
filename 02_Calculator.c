@@ -43,9 +43,15 @@ int main(int argc, char const *argv[]) {
       printf("Number\n" );
       scanf("%lf",&num1 );
       printf("Divider\n" );
-      scanf("%lf",&num1 );
-      result = num1 / num2;
-      printf("%lf\n",result );
+      scanf("%lf",&num2 );
+
+      if(num2 != 0){
+        result = num1 / num2;
+        printf("%lf\n",result );
+      }
+
+      else
+       printf("%s\n","divided by 0" );  
     }
 
   } while(answere != -1);
